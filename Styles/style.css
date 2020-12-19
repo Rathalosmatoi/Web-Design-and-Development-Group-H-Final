@@ -1,0 +1,453 @@
+/*Remeber to use Google font and group decided colours and fonts or themeatics*/
+/*Nathan Fitzgerald CSS*/
+body{/*Nathan+Vilhelmas Dziuve*/
+    box-sizing: border-box;
+    background-color: #28DF99;
+    margin: auto;
+    margin-top: 200;
+    position: relative;
+    padding: 0;
+    font-size: 6.5;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+}
+/*vh, vw, rem. Relatives. Rem for font size, wh and vh for heigh and wieght of the viewpoint*/
+h1 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 4%;
+    color: black;
+}
+
+h6 {
+    font-size: 4rem;
+    margin: auto;
+    margin-right: 60%;
+}
+
+.quizstart{
+    font-size: 5rem;
+    margin-bottom: 5%;
+    color: white;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28 , 26, 26);
+    background: linear-gradient(90deg, #f6f7d4 0%, #f9fca9 100%);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(28, 92, 34);
+    transition: transform 150ms;
+    transform: scale(1.03);
+
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #f9fca9 0%, #f6f7d4 100%);
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(177, 255, 131);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+/*don't forget to remove spaces or look out for spaces*/
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+/*Questions correct or inccorect*/
+.choice-container-correct {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: #99f3bd;
+    box-shadow: 0 0.8rem 1.8rem 0 #8af1b3;
+}
+
+.choice-container-incorrect {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(241, 128, 128);
+    box-shadow: 0 0.8rem 1.8rem 0 rgb(241, 128, 128);
+
+}
+
+/*Hud CSS*/
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+/*read what you're writing*/
+#progressBar {
+    width: 20em;
+    height: 3em;
+    border: 0.2em solid rgb(0, 255, 76);
+    margin-top: 2em;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+/*cap sensitive*/
+#progressBarfull {
+    height: 100%;
+    background: rgb(0, 255, 76);
+    width: 0%;
+}
+
+
+/*blog css*/
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #28df99;
+    font-size: x-large;
+}
+
+
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+  
+.imagespace{
+    background-color: #f6f7d4;
+    padding: 20px;
+}
+  
+.imagescale{
+    width: "50%";
+    height: "50%";
+}
+  
+.post {
+     background-color: #d2f6c5;
+     padding: 20px;
+     margin-top: 20px;
+}
+  
+#sidebar{
+      width: 24%;
+      margin-top: 20px;
+      height: 85;
+      position: fixed;
+      right: 0%;
+      background: #99f3bd;
+      font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sidebar1{
+    margin-bottom:1rem;
+    margin-top:1rem;
+}
+
+a {
+    color: white;
+}
+
+/*Jeremie Kizenga+Nathan Fitzgerald*/
+
+.taskbarbase {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #28df99;
+}
+  
+.taskbar {
+    float: left;
+}
+  
+.taskbar1 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.taskbar1:not(.active) {
+    background-color: #99f3bd;
+}
+
+.active {
+    background-color: #28df99;
+}
+
+/*Vilhelmas Dziuve CSS*/
+.gallery {
+    margin: 10px 50px;
+}
+
+.gallery img{
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+
+}
+
+.gallery img:hover {
+filter: grayscale(100%);
+transform: scale(1.1);
+
+}
+
+body{
+    background: #28df99;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container1{
+    width: 80%;
+    margin: 50px auto;
+    
+}
+.contact-box{
+    background: #fff;
+    display:flex;
+    
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    
+}
+.contact-right{
+    flex-basis: 60%;
+    padding: 40px;
+    background: #99f3bd;
+    color: #fff;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+    
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+label{
+    margin-bottom:6px;
+    display: block;
+    color: #28df99;
+    
+}
+
+button{
+    
+    background: #28df99;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+
+.contact-left h3{
+   color: #28df99;
+   font-weight: 600;
+   margin-bottom: 30px;
+   
+}
+
+.contact-right h3{
+   font-weight: 600;
+   margin-bottom: 30px;
+   
+}
+tr td:first-child{
+    padding-right: 20px;
+    
+    
+}
+
+tr td{
+    padding-top: 20px;
+    
+}
+  
+
+@media only screen and (min-width: 992px) {
+    
+} 
+
+@media only screen and (max-width: 600px) {
+    #sidebar{
+        width: 24%;
+        margin-top: 20px;
+        height: 85;
+        position: fixed;
+        right: 0%;
+        background: rgb(128, 241, 165);
+        font-size: 1.5rem;
+  }
+    h1 {
+        font-size: 1.4rem;
+        color: rgb(255, 255, 255);
+        margin-bottom: 5%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: 4%;
+        color: black;
+    }
+
+    h6 {
+        font-size: 2rem;
+        margin: auto;
+    }
+
+    .hud-prefix {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    #progressBar {
+        width: 15em;
+        height: 2.5em;
+        border: 0.2em solid rgb(0, 255, 76);
+        margin-top: 2em;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+    #progressBarfull {
+        height: 100%;
+        background: rgb(0, 255, 76);
+        width: 0%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #sidebar{
+        width: 24%;
+        margin-top: 20px;
+        height: 85;
+        position: fixed;
+        right: 0%;
+        background: rgb(128, 241, 165);
+        font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+    #sidebar{
+        width: 24%;
+        margin-top: 20px;
+        height: 85;
+        position: fixed;
+        right: 0%;
+        background: rgb(128, 241, 165);
+        font-size: 0.7rem;
+  }
+}
